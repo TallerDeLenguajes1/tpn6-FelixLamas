@@ -77,6 +77,34 @@ namespace Tp6
             //--------------------------------------------------------------------------------------------------------
 
             //----------------------------------- Ejercicio 3 del tp 6------------------------------------------------
+            double num3;
+            Console.WriteLine("Ingrese un numero real:");
+            num3 = Convert.ToDouble(Console.ReadLine());
+            decimal Vabs;
+            double Cuadrado, RaizCuadrada, seno, coseno;
+            int ParteEntera;
+
+            Vabs = Math.Abs(Convert.ToDecimal(num3));
+            Cuadrado = Math.Pow(num3,2);
+            RaizCuadrada = Math.Sqrt(num3);
+            seno = Math.Sin(num3);
+            coseno = Math.Cos(num3);
+            Console.WriteLine("El valor absoluto del numero " +num3+" es "+Vabs);
+            Console.WriteLine("El cuadrado del numero " + num3 + " es " + Cuadrado);
+            Console.WriteLine("La raiz cuadrada del numero " + num3 + " es " + RaizCuadrada);
+            Console.WriteLine("El seno del numero " + num3 + " es " + seno);
+            Console.WriteLine("El coseno del numero " + num3 + " es " + coseno);
+
+            Console.WriteLine("Ingrese dos numeros ");
+            decimal num4, num5;
+            num4 = Convert.ToDecimal(Console.ReadLine());
+            num5 = Convert.ToDecimal(Console.ReadLine());
+            decimal maximo = Math.Max(num5, num4);
+            decimal minimo = Math.Min(num5,num4);
+
+            Console.WriteLine("El maximo de los numero ingresados es " + maximo);
+            Console.WriteLine("El minimo de los numero ingresados es " + minimo);
+            //---------------------------------------------------------------------------------------------------------
         }
     }
 }
